@@ -1,0 +1,157 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scroll-container {
+    overflow: hidden; /* Hide the scrollbar and any overflow content */
+    white-space: nowrap; /* Prevent the images from wrapping to the next line */
+    width: 100%; /* Adjust the container width as needed */
+    position: relative; /* Position relative for animation */
+}
+
+.scroll-content {
+    display: inline-block; /* Keep images in a single line */
+    animation: scrollAnimation 20s linear infinite; /* Set up the animation */
+}
+
+.scroll-content img {
+    width: 200px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Optional: Add space between images */
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+           Add more images as needed
+        </div>
+    </div>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container-info {
+            display: flex;
+            gap: 15px;
+            border-radius: 20px;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            animation: scroll 1zz0s linear infinite; /* Applied animation here */
+        }
+      
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-100% + 100vw)); /* Adjusted to container size */
+            }
+        }
+        .container-img{
+           display:flex;
+           flex-direction: column;
+           gap:20px;
+           border: 2px solid;
+           border-radius: 20px;
+           overflow-x: scroll;
+            scroll-behavior: smooth;
+            animation: scroll 2s ease infinite left;
+        }
+          
+        img{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-info">
+            <div class="container-img">
+                <img src="./images/courses-02.jpg"  alt="">
+                <h3>BUSINESS WORLD</h3>
+                <p>Incorporate industry trends, case studies, career opportunities, networking events, professional associations, research publications, alumni success stories, and interactive tools to enhance your graduate school webpage with business world information.</p>
+                <img class="image" width="100"  src="./images/author-02.png" alt="">
+                <a href="#">free<i class="ri-arrow-right-double-fill"></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-03.jpg"  alt="">
+                <h3>MEDIA TCHNOLOGY</h3>
+                <p>Integrate insights on emerging trends, innovative tools, and key applications in media technology to enrich your webpage's content.</p>
+                <img class="image" width="100"  src="./images/author-03.png" alt="">
+                <a href="#">pay <i class="ri-arrow-right-double-fill"></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-04.jpg"  alt="">
+                <h3>COMMUNICATION</h3>
+                <P>Highlight key strategies, technologies, and trends in communication to effectively convey information and engage audiences.</P>
+                <img class="image" width="100" src="./images/author-04.png" alt="">
+                <a href="#">free<i class="ri-arrow-right-double-fill"></i></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-05.jpg" alt="">
+                <h3>BUSINESS ETHICS</h3>
+                <p>Focus on principles and practices that guide ethical decision-making and behavior in the business world to ensure integrity and social responsibility.</p>
+                <img class="image" width="100"  src="./images/author-05.png" alt="">
+                <a href="#">pay<i class="ri-arrow-right-double-fill"></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-01.jpg" alt="">
+                <h3>PHOTOGRAPHY</h3>
+                <P>Photography is the art and practice of capturing images using a camera to visually communicate and express ideas, emotions, or narratives. This medium combines technical skills with creative vision to document .</P>
+                <img class="image" width="100"  src="./images/author-01.png" alt="">
+                <a href="#">pay<i class="ri-arrow-right-double-fill"></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-03.jpg"  alt="">
+                <h3>MEDIA TCHNOLOGY</h3>
+                <p>Integrate insights on emerging trends, innovative tools, and key applications in media technology to enrich your webpage's content.</p>
+                <img class="image" width="100"  src="./images/author-03.png" alt="">
+                <a href="#">pay <i class="ri-arrow-right-double-fill"></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-04.jpg"  alt="">
+                <h3>COMMUNICATION</h3>
+                <P>Highlight key strategies, technologies, and trends in communication to effectively convey information and engage audiences.</P>
+                <img class="image" width="100"  src="./images/author-04.png" alt="">
+                <a href="#">free<i class="ri-arrow-right-double-fill"></i></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-05.jpg" alt="">
+                <h3>BUSINESS ETHICS</h3>
+                <p>Focus on principles and practices that guide ethical decision-making and behavior in the business world to ensure integrity and social responsibility.</p>
+                <img class="image" width="100"  src="./images/author-05.png" alt="">
+                <a href="#">pay<i class="ri-arrow-right-double-fill"></i></a>
+            </div>
+            <div class="container-img">
+                <img src="./images/courses-01.jpg" alt="">
+                <h3>PHOTOGRAPHY</h3>
+                <P>Photography is the art and practice of capturing images using a camera to visually communicate and express ideas, emotions, or narratives. This medium combines technical skills with creative vision to document .</P>
+                <img class="image" width="100"  src="./images/author-01.png" alt="">
+                <a href="#">pay<i class="ri-arrow-right-double-fill"></i></a>
+            </div>
+     </div>
+    
+</body>
+</html>
