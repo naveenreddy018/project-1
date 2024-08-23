@@ -458,6 +458,13 @@ textarea::placeholder{
 .input-info-2{
     display: none;
 }
+
+.ri-menu-fill{
+    display: none;
+}
+.toogle{
+    display: none;
+}
 .end{
     display: flex;
     justify-content: center;
@@ -474,6 +481,13 @@ textarea::placeholder{
     .navbar{
         display: none;
     }
+    .ri-menu-fill{
+        display: block;
+    }
+    .ri-menu-fill:hover{
+       display: block;
+    }
+    
     .header{
         width:100%;
     }
@@ -503,6 +517,10 @@ textarea::placeholder{
         justify-content: center; 
         position: relative;   
         left: 80px;
+        line-height: 2;
+    }
+    .about-type-container center{
+        display: none;
     }
     .about-description{
         display: flex;
@@ -514,12 +532,15 @@ textarea::placeholder{
        display: none;
     }
     .about-description-info{
-        font-size: 20px;
-        text-align: center;
+        display: flex;
+       justify-content: center;
+       flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
         color:var(--bg-color);
-        margin-top: 60px;
-        line-height: 1;
+
+        font-size: 15px;
+        line-height: 2;
+        align-items: center;
     }
     .container-main{
         display: flex;
