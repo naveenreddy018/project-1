@@ -475,17 +475,14 @@ textarea::placeholder{
 }
 
 @media  screen and (max-width:480px) {
+    body{
+        width: 100%;
+    }
     .logo{
         font-size: 20px;
     }
     .navbar{
         display: none;
-    }
-    .ri-menu-fill{
-        display: block;
-    }
-    .ri-menu-fill:hover{
-       display: block;
     }
     
     .header{
@@ -512,12 +509,18 @@ textarea::placeholder{
         display: none;
     }
     .about-type-container{
+        display: inline;
         display: flex;
+        width: 75%;
         flex-direction: column;
-        justify-content: center; 
+       align-items: center;
+       justify-content: center;
         position: relative;   
-        left: 80px;
-        line-height: 2;
+        left: 30px;
+        line-height: 2  ;
+    }
+    .about-type-container h4{
+        display: inline;
     }
     .about-type-container center{
         display: none;
